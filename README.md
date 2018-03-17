@@ -2,7 +2,6 @@
 
 This repository contains a Dockerfile to build a Docker Image with CentOS 7 Base.
 
-[![Build Status](https://travis-ci.org/zokeber/docker-centos.svg?branch=master)](https://travis-ci.org/zokeber/docker-centos)
 
 ## Base Docker Image
 
@@ -22,13 +21,9 @@ docker pull zokeber/centos:latest
 
 **Another way: build from Github**
 
-To create the image zokeber/centos, clone this repository and execute the following command on the docker-centos folder:
+To create the image growsy/centos, clone this repository and execute the following command on the docker-centos folder:
 
-`docker build -t zokeber/centos:latest .`
-
-Another alternatively, you can build an image directly from Github:
-
-`docker build -t="zokeber/centos:latest" github.com/zokeber/docker-centos`
+`docker build -t growsy/centos:latest .`
 
 
 ### Create and running a container
@@ -36,7 +31,7 @@ Another alternatively, you can build an image directly from Github:
 **Create container:**
 
 ```
-docker create -it --name centos -h centos zokeber/centos
+docker create -it --name centos -h centos growsy/centos
 ```
 
 **Start container:**
@@ -65,5 +60,5 @@ docker stop centos
 Update the docker image:
 
 ```
-docker pull zokeber/centos:latest
+docker pull growsy/centos:latest
 ```

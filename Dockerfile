@@ -3,10 +3,10 @@
 #
 
 # Build:
-# docker build -t zokeber/centos:latest .
+# docker build -t growsy/centos:latest .
 
 # Create:
-# docker create -it --name centos -h centos zokeber/centos
+# docker create -it --name centos -h centos growsy/centos
 
 # Start:
 # docker start centos
@@ -18,7 +18,7 @@
 FROM centos:latest
 
 # Maintener
-MAINTAINER Daniel Lopez Monagas <zokeber@gmail.com>
+MAINTAINER Growsy <growsy@zorroa.com>
 
 # Update CentOS 7
 RUN yum update -y && yum upgrade -y
