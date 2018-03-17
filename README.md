@@ -16,7 +16,7 @@ This repository contains a Dockerfile to build a Docker Image with CentOS 7 Base
 2. You can download automated build from public Docker Hub Registry:
 
 ```
-docker pull zokeber/centos:latest
+docker pull growsy/centos:latest
 ```
 
 **Another way: build from Github**
