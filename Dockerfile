@@ -15,7 +15,15 @@
 # docker exec -it centos bash
 
 # Pull base image
-FROM centos:latest
+FROM scratch
+ADD centos-7-docker.tar.xz /
+
+LABEL name="CentOS Base Image: /
+    vendor="Centos" \
+    license="GPLv2" \
+    build-date="20180302"
+
+CMD ["/bin/bash"]
 
 # Maintener
 MAINTAINER Growsy <growsy@zorroa.com>
